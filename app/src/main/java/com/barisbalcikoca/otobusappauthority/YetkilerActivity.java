@@ -99,7 +99,7 @@ public class YetkilerActivity extends AppCompatActivity {
             else  if(islemTuru.equals("e_durak_guncelle")){
 
                 if (i == 0) {
-                    editText.setHint("Eski Durak Numarasını Giriniz");
+                    editText.setHint("Güncellenecek Durak Numarasını Giriniz");
                 } else if (i == 1) {
                     editText.setHint("Yeni Durak Numarasını Giriniz");
                 }
@@ -127,7 +127,7 @@ public class YetkilerActivity extends AppCompatActivity {
             }
             else  if(islemTuru.equals("e_guzergah_guncelle")){
                 if (i == 0) {
-                    editText.setHint("Eski Guzergah Adını Giriniz");
+                    editText.setHint("Güncellenecek Guzergah Adını Giriniz");
                 } else if (i == 1) {
                     editText.setHint("Yeni Guzergah Adını Giriniz");
                 }
@@ -151,12 +151,12 @@ public class YetkilerActivity extends AppCompatActivity {
             }
             else  if(islemTuru.equals("e_sefer_ekle")){
                 if (i == 0) {
-                    editText.setHint("Guzergah Adını Giriniz");
+                    editText.setHint("Eklenecek Yeni Seferin Guzergah Adını Giriniz");
                 } else if (i == 1) {
-                    editText.setHint("Otobus Numarasını Giriniz");
+                    editText.setHint("Eklenecek Yeni Seferin Otobus Numarasını Giriniz");
                 }
                 else if (i == 2) {
-                    editText.setHint("Kalkış Saatini Giriniz");
+                    editText.setHint("Eklenecek Yeni Seferin Kalkış Saatini Giriniz");
                 }
 
                 onaylaBtn.setOnClickListener(new View.OnClickListener() {
@@ -168,18 +168,18 @@ public class YetkilerActivity extends AppCompatActivity {
             }
             else  if(islemTuru.equals("e_sefer_guncelle")){
                 if (i == 0) {
-                    editText.setHint("Eski Guzergah Adını Giriniz");
+                    editText.setHint("Güncellenecek Guzergah Adını Giriniz");
                 } else if (i == 1) {
                     editText.setHint("Yeni Guzergah Adını Giriniz");
                 }
                 else if (i == 2) {
-                    editText.setHint("Eski Otobus Numarasını Giriniz");
+                    editText.setHint("Güncellenecek Otobus Numarasını Giriniz");
                 }
                 else if (i == 3) {
                 editText.setHint("Yeni Otobus Numarasını Giriniz");
                 }
                 else if (i == 4) {
-                editText.setHint("Eski Kalkış Saatini Giriniz");
+                editText.setHint("Güncellenecek Kalkış Saatini Giriniz");
                 }
                 else if (i == 5) {
                 editText.setHint("Yeni Kalkış Saatini Giriniz");
