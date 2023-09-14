@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/margin"
+    android:background="@color/Gainsboro"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardBackgroundColor="@color/Gainsboro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/eskisehir"
+        tools:context=".LoginActivity">
+
+        <!-- Kullanıcı Adı TextInputLayout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wrapperKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textColorHint="@color/Black"
+            app:boxCornerRadiusTopStart="@dimen/card_corner_radius"
+            app:boxCornerRadiusTopEnd="@dimen/card_corner_radius"
+            app:boxCornerRadiusBottomStart="@dimen/card_corner_radius"
+            app:boxCornerRadiusBottomEnd="@dimen/card_corner_radius"
+            app:boxBackgroundColor="@color/Gainsboro">
+
+            <!-- Kullanıcı Adı TextInputEditText -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/labelKullaniciAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:hint="Kullanıcı Adı:"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Şifre TextInputLayout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wrapperSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_margin="@dimen/margin"
+            app:boxCornerRadiusTopStart="@dimen/card_corner_radius"
+            app:boxCornerRadiusTopEnd="@dimen/card_corner_radius"
+            app:boxCornerRadiusBottomStart="@dimen/card_corner_radius"
+            app:boxCornerRadiusBottomEnd="@dimen/card_corner_radius"
+            app:boxBackgroundColor="@color/Gainsboro">
+
+            <!-- Şifre TextInputEditText -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/labelSifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:hint="Şifre:"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Giriş Butonu -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGiris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/Gainsboro"
+            android:textColor="@color/Black"
+            android:text="Giriş"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
